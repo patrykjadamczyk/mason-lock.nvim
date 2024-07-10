@@ -33,7 +33,7 @@ function M.write_lockfile()
         end)
     end
 
-    vim.wait(5000, function() return #packages == #entries end)
+    -- vim.wait(5000, function() return #packages == #entries end)
 
     -- remove anything that failed
     for i, package in pairs(entries) do
